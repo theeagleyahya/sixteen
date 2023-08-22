@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body{
+    width: 1440px;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+
+.sec1{
+    width: 690px;
+    position: relative;
+    margin-left: 375px;
+    margin-top: 130px;
+    display: flow-root;
+}
+
+.sec1 img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sec1 h1{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 41.5px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.sec1 p{
+    color: hsl(201, 11%, 66%);
+    font-size: 17px;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-top: revert;
+}
+
+.sec1 section{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.sec1 section > a{
+    text-decoration: none;
+    width: 225px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    border-radius: 45px;
+    
+}
+
+.sec1 section > a:first-child{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: inset 0px -3px 2px 0px hsl(202, 12%, 58%),
+    0px 4px 20px 3px hsl(170, 51%, 78%);
+}
+
+.sec1 section > a:last-child{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: inset 0px -3px 2px 0px hsl(202, 12%, 58%),
+    0px 4px 20px 3px hsl(234, 27%, 78%);
+}
+
+.sec2{
+    width: 690px;
+    position: relative;
+    margin-left: 375px;
+    margin-top: 130px;
+    display: flow-root;
+   
+}
+
+
+
+.sec2 h2{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sec2 p{
+    color: hsl(201, 11%, 66%);
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    margin-top: revert;
+}
+
+.sec3{
+    display: flex;
+    margin-top: 85px;
+    gap: 110px;
+}
+
+.sec3 img{
+    margin-left: -33px;
+}
+
+.sec3 section{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.sec3 section section p:first-child{
+    font-weight: 600;
+    font-size: 22px;
+    color: hsl(210, 10%, 33%);
+}
+
+.sec3 section section p:last-child{
+    margin-top: revert;
+    line-height: 1.7;
+    color: hsl(201, 11%, 66%);
+}
+
+
+main > img {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+}
+
+.tools{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tools > section{
+    width: 350px;
+    text-align: center;
+}
+
+
+.tools :is(.backlist, .text, .sneak) p:first-of-type{
+    font-weight: 600;
+    font-size: 22px;
+    color: hsl(210, 10%, 33%);
+    margin-top: revert;
+}
+
+.tools :is(.backlist, .text, .sneak) p:last-child{
+    color: hsl(201, 11%, 66%);
+    margin-top: revert;
+    line-height: 1.7;
+}
+
+.platforms{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+}
+
+.platforms > img{
+    display: block;
+    width: 160px;
+    height: 40px;
+}
+
+footer{
+    margin-top: 155px;
+    height: 145px;
+    background-color: hsla(202, 12%, 87%, 0.356);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+footer .webs{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section section p:last-child{
+    margin: revert;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        width: 100vw;
+        background-image: url(images/bg-header-mobile.png);
+    }
+
+    main{
+        padding: 33px;
+    }
+
+    .sec1{
+        margin-top: 120px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sec1 h1{
+        font-size: 30px;
+    }
+
+    .sec1 p{
+        font-size: 12.95px;
+    }
+
+    .sec1 section{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 60px;
+    }
+
+    .sec1 section > a{
+        width: 100%;
+    }
+
+    .sec2{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sec2 p{
+        color: hsl(201, 11%, 66%);
+        font-size: 13.6px;
+        letter-spacing: 1.4px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        margin-top: revert;
+    }
+
+    .sec3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 85px;
+        gap: 110px;
+    }
+    
+    .sec3 img{
+        margin-left: 0;
+    }
+    
+    .sec3 section{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+    
+    .sec3 section section p:first-child{
+        font-weight: 600;
+        font-size: 22px;
+        color: hsl(210, 10%, 33%);
+    }
+    
+    .sec3 section section p:last-child{
+        margin-top: revert;
+        line-height: 1.7;
+        color: hsl(201, 11%, 66%);
+        margin-bottom: 60px;
+    }
+
+    main > img {
+        display: block;
+        width: 110%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+    }
+
+    .tools{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .tools > section{
+        width: 100%;
+    }
+
+    .platforms{
+        flex-direction: column;
+        align-items: center;
+        gap: 95px;
+    }
+
+    footer{
+        margin-top: 155px;
+        height: 500px;
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    footer > .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    footer .webs{
+        margin-top: 50px;
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
